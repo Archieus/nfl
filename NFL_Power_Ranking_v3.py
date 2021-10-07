@@ -153,9 +153,20 @@ def analyze_teams():
     print(teamnameB,"Median Points Against (Def. Rating): ", statistics.median(pointsaggAllB))
     print(teamnameB, "Power_Rank: ", ((statistics.median(pointsforAllB) + statistics.median(pointsaggAllA))-20), '\n')
 
+#def mike_lee():
+#    if teamnameA == nfcteam:
+#        print(teamnameA, nfc_rank)
+#    elif teamnameA == afcteam:
+#        print(teamnameA, afc_rank)
+#    if teamnameB == nfcteam:
+#        print(teamnameB, nfc_rank)
+#    elif teamnameB == afcteam:
+#        print(teamnameB, afc_rank)
+
 team_analysis = True
 
 ## RUN THE SCRIPT FROM FUNCTIONS
 while team_analysis: #Same as while team_analysis is True:
     analyze_teams()
+    #mike_lee()
     team_analysis = analyze_choice()
